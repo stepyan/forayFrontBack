@@ -1,0 +1,4 @@
+The number of tasklists is <%= @num_tasklists %> and the number of tasks is <%= @num_tasks %>
+<% @tasklists.each do |tl| %>
+  <%= link_to  tl.title, list_path(:tlid => tl.id)%>
+<% end %>
